@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>نتيجة الثانوية العامة</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+<img src="moe-logo.png" alt="وزارة التربية والتعليم" style="display:block;margin-right:auto;margin-left:auto;">
+<img src="logo.png" alt="مديرية القاهرة التعليمية" style="display:block;margin-right:auto;margin-left:auto;">
+
+<body>
+
+    <header class="w3-container">
+        <h1 style="margin-right:auto;margin-left:auto;width:30%;">نتائج اختبارات مرحلة الثانوية العامة</h1>
+    </header>
+
+    <div class="center">
+        <form>
+            <p>
+                <input id="rakam" type="number" required>
+                <label dir="rtl">الرقم القومي</label></p>
+            <p>
+                <input id="golos" type="number" required>
+                <label dir="rtl">رقم الجلوس</label></p>
+            <p>
+                <a id="butt" class="button">نتيجة الطالب</a></p>
+        </form>
+
+    </div>
+    <script>
+            const NUMBER = document.getElementById('rakam');
+            const GOLOS = document.getElementById('golos');
+            const BUTTON = document.getElementById('butt');
+              
+            GOLOS.addEventListener('keyup', function (event) {
+              
+              if (NUMBER.value == "3020420015493" && GOLOS.value == "902") {
+                BUTTON.href = "result.html";
+              } else {
+                BUTTON.href = "index.html";
+              }
+            });
+            </script>
+</body>
+
+
